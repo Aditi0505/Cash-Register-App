@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cash Register</title>
   </head>
   <body>
@@ -18,30 +19,32 @@
     <input type="number" id="bill-amt" />
     <label>Cash Given</label>
     <input type="number" id="cash-amt" />
-    <button id="btn-check">Check</button>
-    <div>Return Change:</div>
-    <table>
+    <div class="btn-container">
+      <button id="btn-check">Check</button>
+    </div>
+    <div id="output"></div>
+    <div class="table-div">Return Change:</div>
+    <table class="table-container">
       <tbody>
-        <tr>
-          <td>No.of Notes</td>
-          <td class="noOfNotes"></td>
-          <td class="noOfNotes"></td>
-          <td class="noOfNotes"></td>
-          <td class="noOfNotes"></td>
-          <td class="noOfNotes"></td>
-          <td class="noOfNotes"></td>
-          <td class="noOfNotes"></td>
-          <td class="noOfNotes"></td>
+        <tr class="table-div">
+          <th class="table">No.of Notes</th>
+          <td class="noOfNotes table"></td>
+          <td class="noOfNotes table"></td>
+          <td class="noOfNotes table"></td>
+          <td class="noOfNotes table"></td>
+          <td class="noOfNotes table"></td>
+          <td class="noOfNotes table"></td>
+          <td class="noOfNotes table"></td>
         </tr>
         <tr>
-          <td>Note</td>
-          <td>2000</td>
-          <td>500</td>
-          <td>100</td>
-          <td>20</td>
-          <td>10</td>
-          <td>5</td>
-          <td>1</td>
+          <th class="table">Note</th>
+          <td class="table-div table">2000</td>
+          <td class="table-div table">500</td>
+          <td class="table-div table">100</td>
+          <td class="table-div table">20</td>
+          <td class="table-div table">10</td>
+          <td class="table-div table">5</td>
+          <td class="table-div table">1</td>
         </tr>
       </tbody>
     </table>
