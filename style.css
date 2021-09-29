@@ -70,3 +70,6 @@ button {
 .table-container {
   border-collapse: collapse;
 }
+.footer {
+  margin-top: 2rem;
+}
